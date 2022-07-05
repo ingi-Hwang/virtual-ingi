@@ -1,0 +1,28 @@
+{% extends 'community/base.html'%}
+{% load static %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+       {% csrf_token %}
+    {% block content %}
+    <style>
+       body{
+           background-image: url('https://cdn.pixabay.com/photo/2018/11/26/08/20/haeundae-beach-3838960_1280.jpg');
+           background-reqeat: no-repeat;
+           background-size: cover;
+       }
+    </style>
+       {{ form.as_p }}
+       <div>
+           <a class="logo" style="display: block; position:absolute; left:45%; font-size: 40px">Dolphis</a>
+       </div>
+
+       <a type="submit" href = "create"class ="btn btn-primary" style="display: block; left:45%; bottom:10%; position:absolute">일정생성 </a>
+    {% endblock %}
+</body>
+</html>

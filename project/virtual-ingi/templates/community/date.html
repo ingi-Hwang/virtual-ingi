@@ -1,0 +1,53 @@
+{% extends 'community/base.html'%}
+{% load static %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+        {% block content %}
+
+    <form autocomplete="on" method="post" >
+        {% csrf_token %}
+            출발날짜 <input type='date' name='date'/>&nbsp;&nbsp;
+            마지막날 <input type="date" name="date2"/><br/>
+            시작시간 <input type="time" name="time"><br>
+            지역선택
+            <select name="local">
+             <option value="부산">부산</option>
+            </select>
+
+        <!-- 태그부분   -->
+        <p><label><input type="checkbox" name="tag[]" value="힐링"> 힐링</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="산책"> 산책</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="공원"> 공원</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="박물관"> 박물관</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="야경"> 야경</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="스포츠"> 스포츠</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="문화"> 문화</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="바다"> 바다</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="사찰"> 사찰</label></p>
+        <p><label><input type="checkbox" name="tag[]" value="사진"> 사진</label></p>
+
+
+             <input type="submit" value="완료"/>
+              {{ form.as_p }}
+    </form>
+    <div id="map" style="width:500px;height:400px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a85b858e7152976bb60b0c2e97096fbd"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
+    {% endblock %}
+
+</body>
+</html>

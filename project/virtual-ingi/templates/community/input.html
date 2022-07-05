@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" herf="{% static 'css/style.css' %}">
+</head>
+<body>
+    <form action="" autocomplete="on" method="post" >
+        {% csrf_token %}
+        출발날짜<input type="date", name="startperiod">
+        도착날짜<input type="date", name="endperiod">
+        출발시간<input type="time", name="startime">
+        지역<select name="area">
+            <option name="서울">서울</option>
+            <option name="부산">부산</option>
+            </select>
+        태그<input type="box", value="조용함">
+        {{ form.as_p }}
+<button type="submit">확정 </button>
+    </form>
+
+</body>
+</html>

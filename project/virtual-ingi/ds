@@ -1,0 +1,45 @@
+[33mcommit 0e5c1d6c2cc7fefb659b1f32b01d3811343d0539[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: dong <kdh12045s@naver.com>
+Date:   Mon Apr 11 23:58:20 2022 +0900
+
+    2022. 04. 11
+    secret key 숨김
+
+[33mcommit ec86368cdd233fa7c076744f9c66346604caa4f1[m
+Author: dong <kdh12045s@naver.com>
+Date:   Mon Apr 11 23:33:04 2022 +0900
+
+    2022. 04. 11
+    관광지, 식당, 숙소 모델 내 필드 정의
+
+[33mcommit e3eedd3a7531b741152033356ca66f6d2667151f[m
+Author: dong <kdh12045s@naver.com>
+Date:   Mon Apr 11 17:42:28 2022 +0900
+
+    2022. 04. 11
+    url 매핑되게함
+
+[33mcommit 26f104fa55f0d9ef1736494fbcf6471846fd9913[m
+Merge: 62137b3 ff16883
+Author: dong <kdh12045s@naver.com>
+Date:   Mon Apr 11 17:18:10 2022 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 62137b35e3dc0bbb9760c182dca568685946b959[m
+Author: dong <kdh12045s@naver.com>
+Date:   Mon Apr 11 17:17:57 2022 +0900
+
+    2022. 04. 11
+
+[33mcommit ff168837d68545c717daa9905f02d7d65cb9f359[m
+Author: deKoGenius <67919860+deKoGenius@users.noreply.github.com>
+Date:   Sun Apr 10 16:19:45 2022 +0900
+
+    Create README.md
+
+[33mcommit 6e4217c8113689bf35740dde51d880666b5faf3a[m
+Author: dong <kdh12045s@naver.com>
+Date:   Sun Apr 10 16:17:08 2022 +0900
+
+    Initial commit
